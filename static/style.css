@@ -1,0 +1,37 @@
+#movies img,
+#movies img {
+    width: 100%;
+}
+
+@media(min-width:960px) {
+    #movies .col-md-3 .well {
+        height: 390px;
+    }
+    #movies .col-md-3 img {
+        height: 240px;
+    }
+}
+
+.chamada-foto {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; /* Centraliza horizontalmente */
+    padding-bottom: 2em;
+}
+
+.tchaupipoca {
+    width: 25%;
+    padding-left: 2em;
+}
+
+.jumbotron {
+    width: 70%;
+    text-align: center;
+    background: linear-gradient(#3E3D3D 30%, #181D50 70%);
+}
+
+#searchForm {
+    width: 50%;
+    margin-top: 20px; /* Ajuste conforme necessário para dar espaço entre o texto e o formulário */
+}
