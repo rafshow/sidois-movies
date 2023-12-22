@@ -1,6 +1,11 @@
 $(document).ready(() => {
     $('#searchForm').on('submit', (e) => {
         let searchText = $('#searchText').val();
+        if (!searchText.trim()) {
+            // Se estiver vazio, exibir um alerta e interromper o envio do formulário
+            alert('Por favor, digite algo no campo de pesquisa.');
+            return false;
+        }
         getMovies(searchText);
         e.preventDefault();
     });
